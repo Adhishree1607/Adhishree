@@ -3,86 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adhiparasakthi Engineering College - Student Login</title>
+<title>Adhiparasakthi Engineering College Login</title>
+
+<!-- Google Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
 
-    body{
-        height:100vh;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        background:linear-gradient(135deg,#f8f8f8,#ececec);
-    }
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e6e6e6;
+}
 
-    .container{
-        width:420px;
-        background:#ffffff;
-        padding:30px;
-        border-radius:20px;
-        box-shadow:0 10px 25px rgba(0,0,0,0.15);
-        text-align:center;
-    }
+/* Card */
+.container{
+    width:420px;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
 
-    .logo{
-        width:180px;
-        margin-bottom:15px;
-    }
+/* Logo */
+.logo{
+    width:170px;
+    margin-bottom:15px;
+}
 
-    h1{
-        color:#c00000;
-        font-size:24px;
-        margin-bottom:8px;
-    }
+/* Title */
+h1{
+    color:#c40000;
+    font-size:26px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
 
-    .subtitle{
-        color:#666;
-        font-size:15px;
-        margin-bottom:25px;
-    }
+.subtitle{
+    color:#777;
+    margin-bottom:25px;
+}
 
-    .input-box{
-        width:100%;
-        padding:12px 15px;
-        margin-bottom:15px;
-        border:1px solid #ccc;
-        border-radius:8px;
-        font-size:16px;
-        outline:none;
-    }
+/* Input Box */
+.input-group{
+    display:flex;
+    align-items:center;
+    border:1px solid #ccc;
+    border-radius:10px;
+    padding:10px;
+    margin-bottom:15px;
+}
 
-    .input-box:focus{
-        border-color:#c00000;
-    }
+.input-group span{
+    margin-right:10px;
+    color:#888;
+}
 
-    .login-btn{
-        width:100%;
-        padding:12px;
-        border:none;
-        border-radius:8px;
-        background:#c00000;
-        color:white;
-        font-size:16px;
-        font-weight:bold;
-        cursor:pointer;
-        transition:0.3s;
-    }
+.input-group input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size:16px;
+}
 
-    .login-btn:hover{
-        background:#9d0000;
-    }
+/* Forgot */
+.forgot{
+    text-align:right;
+    margin-bottom:20px;
+}
 
-    .footer{
-        margin-top:20px;
-        font-size:12px;
-        color:#777;
-    }
+.forgot a{
+    color:#c40000;
+    text-decoration:none;
+    font-size:14px;
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:12px;
+    background:#c40000;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#a00000;
+}
+
+/* Footer */
+.footer{
+    margin-top:25px;
+    font-size:12px;
+    color:#777;
+}
 </style>
 
 </head>
@@ -90,22 +117,33 @@
 
 <div class="container">
 
-    <!-- Save your logo image as college-logo.png -->
-    <img src="college-logo.png" alt="College Logo" class="logo">
+    <!-- IMPORTANT: Save your logo as college-logo.png -->
+    <img src="college-logo.png" class="logo" alt="College Logo">
 
-    <h1>ADHIPARASAKTHI ENGINEERING COLLEGE</h1>
+    <h1>ADHIPARASAKTHI<br>ENGINEERING COLLEGE</h1>
     <p class="subtitle">Student Login Portal</p>
 
     <form>
-        <input type="text" class="input-box" placeholder="Username" required>
+        <div class="input-group">
+            <span class="material-symbols-outlined">person</span>
+            <input type="text" placeholder="Username" required>
+        </div>
 
-        <input type="password" class="input-box" placeholder="Password" required>
+        <div class="input-group">
+            <span class="material-symbols-outlined">lock</span>
+            <input type="password" placeholder="Password" required>
+        </div>
 
-        <button type="submit" class="login-btn">LOGIN</button>
+        <div class="forgot">
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit">LOGIN</button>
     </form>
 
     <div class="footer">
-        © 2026 Adhiparasakthi Engineering College. All Rights Reserved.
+        © 2026 Adhiparasakthi Engineering College.<br>
+        All Rights Reserved.
     </div>
 
 </div>

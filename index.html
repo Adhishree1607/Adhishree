@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adhiparasakthi Engineering College - Student Login</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:linear-gradient(135deg,#f8f8f8,#ececec);
+    }
+
+    .container{
+        width:420px;
+        background:#ffffff;
+        padding:30px;
+        border-radius:20px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.15);
+        text-align:center;
+    }
+
+    .logo{
+        width:180px;
+        margin-bottom:15px;
+    }
+
+    h1{
+        color:#c00000;
+        font-size:24px;
+        margin-bottom:8px;
+    }
+
+    .subtitle{
+        color:#666;
+        font-size:15px;
+        margin-bottom:25px;
+    }
+
+    .input-box{
+        width:100%;
+        padding:12px 15px;
+        margin-bottom:15px;
+        border:1px solid #ccc;
+        border-radius:8px;
+        font-size:16px;
+        outline:none;
+    }
+
+    .input-box:focus{
+        border-color:#c00000;
+    }
+
+    .login-btn{
+        width:100%;
+        padding:12px;
+        border:none;
+        border-radius:8px;
+        background:#c00000;
+        color:white;
+        font-size:16px;
+        font-weight:bold;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    .login-btn:hover{
+        background:#9d0000;
+    }
+
+    .footer{
+        margin-top:20px;
+        font-size:12px;
+        color:#777;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Save your logo image as college-logo.png -->
+    <img src="college-logo.png" alt="College Logo" class="logo">
+
+    <h1>ADHIPARASAKTHI ENGINEERING COLLEGE</h1>
+    <p class="subtitle">Student Login Portal</p>
+
+    <form>
+        <input type="text" class="input-box" placeholder="Username" required>
+
+        <input type="password" class="input-box" placeholder="Password" required>
+
+        <button type="submit" class="login-btn">LOGIN</button>
+    </form>
+
+    <div class="footer">
+        © 2026 Adhiparasakthi Engineering College. All Rights Reserved.
+    </div>
+
+</div>
+
+</body>
+</html>
